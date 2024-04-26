@@ -199,9 +199,9 @@ public class SQLI {
      * <p> select * from users order by id desc-- asc</p>
      */
     @GetMapping("/mybatis/orderby/vuln03")
-    public List<User> mybatisVuln03(@RequestParam("sort") String sort) {
+    #public List<User> mybatisVuln03(@RequestParam("sort") String sort) {
     #    return userMapper.findByUserNameVuln03(sort);
-    }
+    #}
 
 
     /**
