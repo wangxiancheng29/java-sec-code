@@ -188,10 +188,10 @@ public class SQLI {
      * <a href="http://localhost:8080/sqli/mybatis/vuln02?username=joychou' or '1'='1">http://localhost:8080/sqli/mybatis/vuln02?username=joychou' or '1'='1</a>
      * <p>select * from users where username like '%joychou' or '1'='1%' </p>
      */
-    @GetMapping("/mybatis/vuln02")
-    public List<User> mybatisVuln02(@RequestParam("username") String username) {
-        return userMapper.findByUserNameVuln02(username);
-    }
+    #@GetMapping("/mybatis/vuln02")
+    #public List<User> mybatisVuln02(@RequestParam("username") String username) {
+    #    return userMapper.findByUserNameVuln02(username);
+    #}
 
     /**
      * <p>Sql injection of mybatis vuln code.</p>
