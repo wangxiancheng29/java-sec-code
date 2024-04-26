@@ -179,9 +179,9 @@ public class SQLI {
      * <p>select * from users where username = 'joychou' or '1'='1' </p>
      */
     @GetMapping("/mybatis/vuln01")
-    #public List<User> mybatisVuln01(@RequestParam("username") String username) {
-    #    return userMapper.findByUserNameVuln01(username);
-    #}
+    //public List<User> mybatisVuln01(@RequestParam("username") String username) {
+    //    return userMapper.findByUserNameVuln01(username);
+    //}
 
     /**
      * <p>Sql injection of mybatis vuln code.</p>
