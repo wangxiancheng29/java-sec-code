@@ -198,10 +198,10 @@ public class SQLI {
      * <a href="http://localhost:8080/sqli/mybatis/orderby/vuln03?sort=id desc--">http://localhost:8080/sqli/mybatis/orderby/vuln03?sort=id desc--</a>
      * <p> select * from users order by id desc-- asc</p>
      */
-    #@GetMapping("/mybatis/orderby/vuln03")
-    #public List<User> mybatisVuln03(@RequestParam("sort") String sort) {
+    @GetMapping("/mybatis/orderby/vuln03")
+    public List<User> mybatisVuln03(@RequestParam("sort") String sort) {
     #    return userMapper.findByUserNameVuln03(sort);
-    #}
+    }
 
 
     /**
